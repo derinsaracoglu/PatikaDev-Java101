@@ -2,7 +2,7 @@ package TemelAlgoritma;
 
 import java.util.Scanner;
 
-public class dersOrtalama {
+public class NotOrtalama {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -35,10 +35,10 @@ public class dersOrtalama {
 		double ort = toplam / 6;
 		
 		if( toplam > 60) {
-			System.out.println("Sınıfı Geçti!");
+			System.out.println("SÃ½nÃ½fÃ½ GeÃ§ti!");
 		}
 			else {
-				System.out.println("Sınıfta Kaldı...");
+				System.out.println("SÃ½nÃ½fta KaldÃ½...");
 			}
 		}
 	
