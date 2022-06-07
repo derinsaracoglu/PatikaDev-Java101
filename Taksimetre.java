@@ -9,14 +9,14 @@ public class taksimetre {
 		double yol, yolTutar = 2.20, tutar, acilis = 10.0;
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Gideceðiniz kilometreyi giriniz:");
+		System.out.println("GideceÃ°iniz kilometreyi giriniz:");
 		yol = input.nextDouble();
 
 		tutar = (yol * yolTutar);
 		tutar += acilis;
 		tutar = (tutar < 20) ? 20 : tutar;
 
-		System.out.println("Yol ücreti:" + tutar);
+		System.out.println("Yol Ã¼creti:" + tutar);
 
 	}
 
