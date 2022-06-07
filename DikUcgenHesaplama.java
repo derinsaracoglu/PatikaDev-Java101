@@ -15,9 +15,9 @@ public class dikUcgenHesaplama {
 		
 		//Girdiler
 		
-		System.out.println("Birinci uzunluğu giriniz:");
+		System.out.println("Birinci uzunluÃ°u giriniz:");
 		a = input.nextInt();
-		System.out.println("İkinci uzunluğu giriniz:");
+		System.out.println("Ãkinci uzunluÃ°u giriniz:");
 		b = input.nextInt();
 		
 		//Hipotenus
