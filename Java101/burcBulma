@@ -1,0 +1,122 @@
+package TemelAlgoritma;
+
+import java.util.Scanner;
+
+public class burcBulma {
+
+	public static void main(String[] args) {
+		int gun, ay;
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Ka��nc� ayda dogdunuz?");
+		ay = input.nextInt();
+
+		System.out.println("Ay�n ka��nda do�dunuz?");
+		gun = input.nextInt();
+
+		String burc = "";
+		boolean isError = false;
+
+		if(ay == 1 && gun >= 1 && gun <= 31) {
+            if(gun <= 21) {
+                burc = "O�lak Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Kova Burcu";
+                System.out.println(burc);
+            }
+        } else if(ay == 2 && gun >= 1 && gun<= 29) {
+            if (gun <= 19) {
+                burc = "Kova Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Bal�k Burcu";
+                System.out.println(burc);
+            }
+        } else if(ay == 3 && gun >= 1 && gun <= 31) {
+            if (gun <= 20) {
+                burc = "Bal�k Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Ko� Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 4 && gun >= 1 && gun <= 30) {
+            if (gun <= 20) {
+                burc = "Ko� Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Bo�a Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 5 && gun >= 1 && gun <= 31) {
+            if (gun <= 21) {
+                burc = "Bo�a Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "�kizler Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 6 && gun >= 1 && gun <= 30) {
+            if (gun <= 22) {
+                burc = "�kizler Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Yenge� Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 7 && gun >= 1 && gun <= 31) {
+            if (gun <= 22) {
+                burc = "Yenge� Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Aslan Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 8 && gun >= 1 && gun <= 31) {
+            if (gun <= 22) {
+                burc = "Aslan Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Ba�ak Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 9 && gun >= 1 && gun <= 30) {
+            if (gun <= 22) {
+                burc = "Ba�ak Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Terazi Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 10 && gun >= 1 && gun <= 31) {
+            if (gun <= 22) {
+                burc = "Terazi Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Akrep Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 11 && gun >= 1 && gun <= 30) {
+            if (gun <= 21) {
+                burc = "Akrep Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "Yay Burcu";
+                System.out.println(burc);
+            }
+        } else if (ay == 12 && gun >= 1 && gun <= 31) {
+            if (gun <= 21) {
+                burc = "Yay Burcu";
+                System.out.println(burc);
+            } else {
+                burc = "O�lak Burcu";
+                System.out.println(burc);
+            }
+        } else {
+            isError = true;
+        }
+	}
+
+}
