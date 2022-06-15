@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class mukemmelSayi {
 
 	public static void main(String[] args) {
+		
+		// Kendisine tam bolunen sayilarin toplami yine kendisi eden sayilara mÃ¼kemmel sayilar denir.
 
 		int sayi, toplam = 0;
 		Scanner input = new Scanner(System.in);
@@ -19,9 +21,9 @@ public class mukemmelSayi {
 
 		}
 		if (sayi == toplam) {
-			System.out.println(sayi + " sayisi mükemmel sayidir.");
+			System.out.println(sayi + " sayisi mÃ¼kemmel sayidir.");
 		} else {
-			System.out.println(sayi + " sayisi mükemmel sayi değildir.");
+			System.out.println(sayi + " sayisi mÃ¼kemmel sayi deÃ°ildir.");
 		}
 
 	}
