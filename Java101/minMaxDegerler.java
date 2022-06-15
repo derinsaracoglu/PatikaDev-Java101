@@ -9,7 +9,7 @@ public class minMaxDegerler {
 		int adet, sayi, min = 1, max = 1;
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Ka� adet sayi gireceksiniz : ");
+		System.out.println("Kaç adet sayi gireceksiniz : ");
 		adet = input.nextInt();
 
 		for (int i = 1; i <= adet; i++) {
@@ -21,12 +21,12 @@ public class minMaxDegerler {
 				min = sayi;
 			}
 
-			if (sayi > max) {
+			if (sayi > max) {    //Girilen sayidan daha buyuk bir sayi girilirse max yeniler.
 				max = sayi;
 
 			}
 
-			if (sayi < min) {
+			if (sayi < min) {   //Girilen sayidan daha küçük bir sayi girilirse min yeniler.
 				min = sayi;
 			}
 
