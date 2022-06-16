@@ -3,23 +3,30 @@ package TemelAlgoritma;
 import java.util.Scanner;
 
 public class usluSayiAlma {
-	        
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-        System.out.print("Taban deðeri giriniz :");
-        int taban = sc.nextInt();
-        System.out.print("Üs deðeri giriniz :");
-        int us = sc.nextInt();
-        int sonuc = 1;
+	static int power(int base, int exp) {
+		Scanner input = new Scanner(System.in);
 
-        for (int i = 1; i <= us; i++) {
-            sonuc *= taban;
-        }
-        System.out.println("========");
-        System.out.println("Sonuç : " + sonuc);
-        System.out.println("========");
-    
+		if (exp == 1) {
+			return base;
+		}
+		if (exp == 0) {
+			return 1;
+		}
+
+		return power(base, exp - 1) * power(base, 1);
+
 	}
 
-}
+	public static void main(String[] args) {
+		 int base,exp;
+	        Scanner scan = new Scanner(System.in);
+
+	        System.out.print("Taban : ");
+	        base = scan.nextInt();
+	        System.out.print("Ãœs : ");
+	        exp = scan.nextInt();
+
+	        System.out.println("Sonuc: " + power(base,exp));
+	    }
+	}
